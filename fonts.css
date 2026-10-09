@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'QingyuSans';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(qingyusans-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'QingyuSans';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(qingyusans-2.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'QingyuSerif';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(qingyuserif-1.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'QingyuSerif';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(qingyuserif-2.ttf) format('truetype');
+}
+
+
+
