@@ -1,0 +1,18 @@
+/* No product-list entrance, no delayed filtering, no moving hit targets. */
+.filters>a{position:relative;isolation:isolate;justify-content:center;width:72px;padding-inline:8px;font-weight:600;background:transparent!important}
+.filters>a::before{content:"";position:absolute;inset:0;z-index:-1;border-radius:999px;background:#e5eadb;opacity:0;transform:scale(.97);transition:opacity 160ms var(--ease),transform 160ms var(--ease)}
+.filters>a[aria-current=true]::before{opacity:1;transform:scale(1)}
+.filters>a[aria-current=true]{color:var(--ink)}
+.faq-list summary{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:44px;list-style:none}
+.faq-list summary::-webkit-details-marker{display:none}
+.faq-list summary::after{content:"";width:8px;height:8px;flex:none;border-right:1.5px solid currentColor;border-bottom:1.5px solid currentColor;transform:rotate(45deg);transition:transform 200ms var(--ease);margin-right:4px}
+.faq-list details[open]>summary::after{transform:rotate(225deg)}
+.faq-list details[data-expanded=false]>summary::after{transform:rotate(45deg)}
+.faq-content{overflow:hidden;transition:height 200ms var(--ease),opacity 160ms var(--ease)}
+.faq-content-inner{display:flow-root}
+.faq-list details[data-expanded=false] .faq-content{opacity:0}
+.faq-list details[data-expanded=true] .faq-content{opacity:1}
+@media(max-width:767px){.filters>a{width:56px;padding-inline:6px}}
+@media(prefers-reduced-motion:reduce){.faq-content,.faq-list summary::after,.filters>a::before{transition:none!important}.filters>a::before{transform:none!important}}
+
+.faq-list details[data-instant=true]>summary::after{transition:none}.comparison .hero-actions{flex-wrap:wrap}

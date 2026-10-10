@@ -1,0 +1,91 @@
+/* Project integration, loaded after the unchanged GPL-2.0 component kit. */
+body[data-material=glass]{--paper:#f7f7f2;--ink:#252d28;--muted:#53635a;--accent:#335947;--line:#d7dfd6;--glass-space:24px;--glass-radius:24px;background:var(--paper);caret-color:var(--accent);accent-color:var(--accent)}
+body[data-material=glass] h1,body[data-material=glass] h2,body[data-material=glass] h3{letter-spacing:-.025em;text-wrap:balance;overflow-wrap:anywhere}
+body[data-material=glass] p{overflow-wrap:anywhere}
+body[data-material=glass] ::selection{background:#cee1d3;color:#193526}
+body[data-material=glass] :focus-visible{outline:3px solid #244b3a;outline-offset:4px}
+body[data-material=glass] [id]{scroll-margin-top:92px}
+body[data-material=glass] .clg{--clg-tint:248 249 243;--clg-ink:#24392d;--clg-radius:var(--glass-radius);color:var(--clg-ink);background:rgb(var(--clg-tint)/var(--clg-alpha));border:1px solid rgb(52 70 57/.18);border-radius:var(--clg-radius);box-shadow:inset 2px -2px 1px -1px #ffffffd9,inset -2px 2px 1px -1px #ffffffd9,inset 6px -6px 1px -6px #ffffff80,inset -6px 6px 1px -6px #ffffff80,inset 0 0 2px #2332292e,0 5px 16px rgb(27 47 36/var(--clg-shadow));-webkit-backdrop-filter:blur(var(--clg-blur));backdrop-filter:blur(var(--clg-blur))}
+body[data-material=glass] .site-header.clg{position:sticky;top:0;z-index:10;width:100%;height:72px;margin:0;padding:0 max(28px,calc((100% - 1120px)/2 - 12px));--clg-radius:0px;border-width:0 0 1px;box-shadow:inset 0 -1px 1px #ffffffb3,0 5px 16px rgb(27 47 36/var(--clg-shadow))}
+body[data-material=glass] .glass-header-content{height:calc(100% - 12px);width:100%;flex-wrap:nowrap;gap:24px;background:rgb(248 249 243/.60);border-radius:12px;padding-inline:12px}
+body[data-material=glass] .desktop-nav{gap:32px;margin-left:auto}
+body[data-material=glass] .desktop-nav a{font-size:13px;color:#3b5145}
+body[data-material=glass] .desktop-nav a[aria-current=page]{color:#233f2e;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:7px}
+body[data-material=glass] .header-note{color:#3b5145}
+body[data-material=glass] .menu-button{background:transparent;min-width:44px;min-height:44px;border-radius:999px;border:1px solid #52685233}
+body[data-material=glass] .menu-button:active{background:#dbe6d6}
+body[data-material=glass] .mobile-nav.clg{position:sticky;top:72px;z-index:9;margin:0;padding:10px 24px;--clg-radius:0px;border-width:0 0 1px}
+body[data-material=glass] .mobile-nav .clg__links{width:100%;justify-content:space-between;gap:8px}
+body[data-material=glass] .mobile-nav .clg__content{background:rgb(248 249 243/.60);border-radius:12px;padding-inline:8px}
+body[data-material=glass] .mobile-nav[hidden]{display:none}
+body[data-material=glass] .clg--button{--clg-radius:999px;min-height:48px;text-decoration:none;padding:12px 22px;font-size:14px;font-weight:600;line-height:1.5;transition:transform 100ms ease-out,border-color 100ms ease-out}
+body[data-material=glass] .primary.clg{--clg-tint:207 227 214;--clg-ink:#234633}
+body[data-material=glass] .primary>.clg__content{display:inline-flex;gap:12px;align-items:center;justify-content:center;width:auto;height:auto}
+body[data-material=glass] .primary .clg__content>span{display:grid;place-items:center}
+body[data-material=glass] .primary .icon{filter:none}
+body[data-material=glass] .quick-view.clg{display:block;--clg-tint:239 244 234;text-align:center;margin:12px 22px 0;font-size:12px;min-height:44px;padding:10px 16px}
+body[data-material=glass] .clg--button:active:not(:disabled){transform:scale(.98);background:rgb(var(--clg-tint)/var(--clg-alpha))}
+body[data-material=glass] .clg--button:disabled{opacity:.6;cursor:not-allowed}
+body[data-material=glass] .hero-actions{gap:24px}
+body[data-material=glass] .secondary{color:var(--accent)}
+body[data-material=glass] .apple-hero-photo .glass-caption{--clg-radius:16px;padding:12px 16px;font-size:12px;display:block}
+body[data-material=glass] .glass-caption>.clg__content{display:flex;justify-content:space-between;align-items:center;gap:12px;background:rgb(248 249 243/.60);padding:6px 10px;border-radius:10px}
+body[data-material=glass] .category-grid>a{background:#e6ebe1}
+body[data-material=glass] .category-grid>a>.glass-category-copy{--clg-radius:0px;padding:24px;flex:1;box-shadow:inset 0 1px 1px #ffffffd9;border-width:1px 0 0}
+body[data-material=glass] .glass-category-copy>.clg__content{height:100%;display:flex;flex-direction:column}
+body[data-material=glass] .glass-category-copy p,body[data-material=glass] .glass-category-copy span{color:#415748}
+body[data-material=glass] .guide-panel.clg{padding:36px;--clg-tint:222 233 219}
+body[data-material=glass] .glass-guide-content{display:flex;align-items:center;justify-content:space-between;gap:32px;width:100%}
+/* Within a glass surface, button highlights remain; a second blur is suppressed. */
+body[data-material=glass] .guide-panel.clg .clg{backdrop-filter:none;-webkit-backdrop-filter:none}
+body[data-material=glass] .filters.clg{padding:4px;--clg-radius:999px;flex:none}
+body[data-material=glass] .glass-filter-content{display:flex;gap:2px}
+body[data-material=glass] .filters .glass-filter-content>a{position:relative;isolation:isolate;display:inline-flex;align-items:center;justify-content:center;min-height:44px;width:76px;padding:8px;font-size:13px;font-weight:500;border-radius:999px;color:#415748}
+body[data-material=glass] .filters .glass-filter-content>a::before{content:"";position:absolute;inset:0;z-index:-1;background:#335947;border-radius:inherit;opacity:0;transition:opacity 100ms ease-out}
+body[data-material=glass] .filters .glass-filter-content>a[aria-current=true]{color:#fff;text-decoration:none;font-weight:600}
+body[data-material=glass] .filters .glass-filter-content>a[aria-current=true]::before{opacity:1}
+body[data-material=glass] .product{border:1px solid #dce3d7}
+body[data-material=glass] .product-info h3{font-size:22px;line-height:1.45}
+body[data-material=glass] .product-arrow{display:none}
+body[data-material=glass] .product-price,body[data-material=glass] dd{font-variant-numeric:tabular-nums}
+body[data-material=glass] .glass-dialog.clg{padding:8px;--clg-radius:28px;overflow:auto;border:1px solid #ffffff94}
+body[data-material=glass] .glass-dialog::backdrop{background:#152b265e;backdrop-filter:none;-webkit-backdrop-filter:none}
+body[data-material=glass] .glass-dialog .detail-layout{border-radius:20px;overflow:hidden;isolation:isolate}
+body[data-material=glass] .glass-dialog .detail-copy{background:#f8f9f3;padding:62px 32px 32px}
+body[data-material=glass] .glass-dialog .dialog-close{z-index:3;right:20px;top:20px;background:#f8f9f3;border:1px solid #b6c5b9;box-shadow:inset 0 1px 1px #fff,0 3px 8px #24392d1f}
+body[data-material=glass] .glass-dialog .dialog-close:active{background:#dce8d8}
+body[data-material=glass] .glass-dialog .dialog-full{color:#fff;background:#335947;width:100%;justify-content:center}
+body[data-material=glass] .detail-hero{gap:64px;padding-top:32px}
+body[data-material=glass] .detail-hero .hero-bezel{padding:0;transform:none;background:transparent;border-radius:28px;box-shadow:none;overflow:hidden}
+body[data-material=glass] .detail-hero .hero-photo{border-radius:28px;aspect-ratio:1.08}
+body[data-material=glass] .detail-hero h1{font-size:clamp(38px,4.3vw,60px);line-height:1.25;font-weight:600}
+body[data-material=glass] .detail-lead{font-size:18px;line-height:1.75;margin-top:20px}
+body[data-material=glass] .detail-hero .notice{background:#ecf0e7;padding:16px 20px;border-radius:16px;font-size:12px;margin-top:24px}
+body[data-material=glass] .detail-hero .spec-list{margin-top:24px}
+body[data-material=glass] .breadcrumb{font-size:13px;padding-top:32px}
+body[data-material=glass] .breadcrumb a{color:var(--accent);min-height:44px;align-items:center}
+body[data-material=glass] .reading-grid{grid-template-columns:.9fr 1.1fr;gap:72px}
+body[data-material=glass] .reading{max-width:70ch}
+body[data-material=glass] .reading p{font-size:15px;line-height:1.95;color:var(--muted);margin-top:16px}
+body[data-material=glass] .reading h3{font-size:20px;line-height:1.45;font-weight:600;margin-top:32px}
+body[data-material=glass] .reading h3:first-child{margin-top:0}
+body[data-material=glass] .principle-list article{grid-template-columns:64px minmax(0,1fr);gap:28px;padding:36px 0}
+body[data-material=glass] .principle-list h3,body[data-material=glass] .care-category-list h3{font-size:25px;font-weight:600;line-height:1.4}
+body[data-material=glass] .principle-list p{max-width:70ch;color:var(--muted);line-height:1.95}
+body[data-material=glass] .care-category-list .guide-panel{background:#edf1e8;padding:32px;border-radius:24px}
+body[data-material=glass] .care-category-list .guide-panel .text-link{flex:none}
+body[data-material=glass] .faq-list{background:#edf1e8;padding:8px 28px;border-radius:24px;margin-top:28px}
+body[data-material=glass] .faq-list summary{font-size:16px;line-height:1.7;font-weight:500;min-height:44px}
+body[data-material=glass] .faq-list p{font-size:14px;line-height:1.95;color:var(--muted)}
+body[data-material=glass] .site-footer small{max-width:75ch;line-height:1.9}
+body[data-material=glass] .image-fallback{min-height:100%;font-size:14px}
+@media(hover:hover) and (pointer:fine){body[data-material=glass] .clg--button:hover:not(:disabled){background:rgb(var(--clg-tint)/var(--clg-alpha));border-color:#45694c80;transform:none}body[data-material=glass] .desktop-nav a:hover{color:#152e20}}
+@media(max-width:1023px){body[data-material=glass] .site-header.clg{padding-inline:12px}body[data-material=glass] .reading-grid{gap:40px}body[data-material=glass] .detail-hero{gap:36px}body[data-material=glass] .glass-guide-content{flex-wrap:wrap}}
+@media(max-width:767px){body[data-material=glass] .site-header.clg{height:64px;padding-inline:8px}body[data-material=glass] .glass-header-content{gap:12px}body[data-material=glass] .mobile-nav.clg{top:64px;padding:8px 20px}body[data-material=glass] .clg--button{font-size:13px;padding:12px 18px}body[data-material=glass] .apple-hero-photo .glass-caption{left:12px;right:12px;bottom:12px;font-size:10px;padding:10px 12px}body[data-material=glass] .glass-caption>.clg__content{gap:8px}body[data-material=glass] .guide-panel.clg{padding:28px 24px}body[data-material=glass] .glass-guide-content{gap:24px}body[data-material=glass] .filters .glass-filter-content>a{width:52px;font-size:12px;padding-inline:5px}body[data-material=glass] .glass-filter-content{gap:0}body[data-material=glass] .filters.clg{padding:3px}body[data-material=glass] .product-tools{flex-wrap:wrap;gap:12px}body[data-material=glass] .product-tools>span{font-size:11px}body[data-material=glass] .detail-hero{grid-template-columns:minmax(0,1fr);gap:30px;padding-top:18px}body[data-material=glass] .detail-hero h1{font-size:36px}body[data-material=glass] .detail-hero .hero-photo{aspect-ratio:1.15;border-radius:24px}body[data-material=glass] .detail-lead{font-size:16px;margin-top:16px}body[data-material=glass] .reading-grid{grid-template-columns:minmax(0,1fr);gap:24px}body[data-material=glass] .reading p{font-size:14px}body[data-material=glass] .reading-grid h2{font-size:30px}body[data-material=glass] .principle-list article{grid-template-columns:36px minmax(0,1fr);gap:16px;padding:28px 0}body[data-material=glass] .principle-list h3,body[data-material=glass] .care-category-list h3{font-size:22px}body[data-material=glass] .principle-list p{font-size:14px}body[data-material=glass] .care-category-list .guide-panel{padding:24px}body[data-material=glass] .faq-list{padding:4px 20px}body[data-material=glass] .faq-list summary{font-size:15px}body[data-material=glass] .glass-dialog.clg{padding:6px;--clg-radius:26px}body[data-material=glass] .glass-dialog .detail-layout{border-radius:20px}body[data-material=glass] .glass-dialog .detail-copy{padding:26px}body[data-material=glass] .glass-dialog .dialog-close{right:18px;top:18px}body[data-material=glass] .glass-dialog #detail-image{height:180px}body[data-material=glass] .site-footer .brand strong{font-size:23px}body[data-material=glass] .site-footer small{max-width:75ch}}
+@media(max-width:359px){body[data-material=glass] .detail-hero h1{font-size:32px}body[data-material=glass] .glass-caption>.clg__content{flex-wrap:wrap}}
+/* Last in the cascade: never let project overrides erase accessible fallbacks. */
+@supports not ((backdrop-filter:blur(1px)) or (-webkit-backdrop-filter:blur(1px))){body[data-material=glass] .clg{background:rgb(var(--clg-tint))}}
+@media(prefers-reduced-transparency:reduce){body[data-material=glass] .clg{background:rgb(var(--clg-tint));-webkit-backdrop-filter:none;backdrop-filter:none}body[data-material=glass] .clg::before{opacity:.2}}
+@media(prefers-contrast:more){body[data-material=glass]{--muted:#364339;--line:#84978b}body[data-material=glass] .clg{color:#152c20;background:rgb(var(--clg-tint));border-color:currentColor;-webkit-backdrop-filter:none;backdrop-filter:none;box-shadow:none}body[data-material=glass] .clg::before,body[data-material=glass] .clg::after{display:none}body[data-material=glass] .clg--button:disabled{opacity:1;border-style:dashed}}
+@media(prefers-reduced-motion:reduce){body[data-material=glass] .clg--button,body[data-material=glass] .menu-button{transition:none}body[data-material=glass] .clg--button:active,body[data-material=glass] .menu-button:active{transform:none}body[data-material=glass] dialog,body[data-material=glass] dialog[open]{transform:none!important;transition:none!important}}
+@media(forced-colors:active){body[data-material=glass] .clg{background:Canvas;color:CanvasText;border-color:CanvasText;box-shadow:none;backdrop-filter:none;-webkit-backdrop-filter:none}body[data-material=glass] .clg::before,body[data-material=glass] .clg::after{display:none}body[data-material=glass] :focus-visible{outline-color:Highlight}}
