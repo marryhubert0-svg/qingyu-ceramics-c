@@ -1,6 +1,8 @@
 /* Project integration, loaded after the unchanged GPL-2.0 component kit. */
 body[data-material=glass]{--paper:#f7f7f2;--ink:#252d28;--muted:#53635a;--accent:#335947;--line:#d7dfd6;--glass-space:24px;--glass-radius:24px;background:var(--paper);caret-color:var(--accent);accent-color:var(--accent)}
 body[data-material=glass] h1,body[data-material=glass] h2,body[data-material=glass] h3{letter-spacing:-.025em;text-wrap:balance;overflow-wrap:anywhere}
+/* Approved home title emphasis; preserve the existing responsive size and two-line layout. */
+body[data-design=apple][data-material=glass] .apple-hero h1{font-family:var(--display);font-weight:800}
 body[data-material=glass] p{overflow-wrap:anywhere}
 body[data-material=glass] ::selection{background:#cee1d3;color:#193526}
 body[data-material=glass] :focus-visible{outline:3px solid #244b3a;outline-offset:4px}
